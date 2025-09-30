@@ -25,13 +25,19 @@
   ✅ Results table showing monthly revenue and order volume
 
 🧭 Guide & Hints
-  Step	Description
-    a.	Use EXTRACT(MONTH FROM order_date) or STRFTIME('%m', order_date) (SQLite) to extract month
-    b.	Group by EXTRACT(YEAR FROM order_date), EXTRACT(MONTH FROM order_date) or STRFTIME('%Y-%m', order_date)
-    c.	Use SUM(amount) to calculate total revenue
-    d.	Use COUNT(DISTINCT order_id) to calculate order volume
-    e.	Use ORDER BY year, month to sort chronologically
-    f.	Use WHERE clause to filter specific time periods (e.g., '2023-01')
+          Step	Description
+        a.	Use EXTRACT(MONTH FROM order_date) or STRFTIME('%m', order_date) (SQLite) to extract month
+        
+        b.	Group by EXTRACT(YEAR FROM order_date), EXTRACT(MONTH FROM order_date) or STRFTIME('%Y-%m', order_date)
+            
+        c.	Use SUM(amount) to calculate total revenue
+    
+        d.	Use COUNT(DISTINCT order_id) to calculate order volume
+
+        e.	Use ORDER BY year, month to sort chronologically
+        
+        f.	Use WHERE clause to filter specific time periods (e.g., '2023-01')
+    
 🧪 Sample SQL (SQLite Version)
         sql
         SELECT
